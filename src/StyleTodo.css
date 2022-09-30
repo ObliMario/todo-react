@@ -8,7 +8,6 @@
   max-width: 50%;
   border-radius: 3px;
   border: 1px solid #e6e6e6;
-  box-shadow: 0 1px 0 #fff;
   /* GLASS STYLE*/
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
@@ -17,10 +16,9 @@
   backdrop-filter: blur(5px);
 }
 
-.TodoCounter {
-  font-size: 1.5em;
+.todo-counter h1, h2{
+  text-align: center;
   font-weight: bold;
-  margin-bottom: 1em;
 }
 
 .TodoList {
@@ -41,6 +39,11 @@
   background-color: #f5f5f5;
   box-shadow: 0 1px 0 #fff;
 }
+
+.TodoSearch input:focus-visible {
+  outline-offset: 0px;
+  outline: 1px ridge #ffffff;
+}
 .TodoButtonCreate button {
   width: 50px;
   height: 50px;
@@ -56,6 +59,12 @@
 
 .TodoButtonCreate button:hover {
   background-color: #76ca84;
+  color: #ffffff;
+  /* go up effect */
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  /* jump effect */
+  transition: all 0.2s ease-in-out;
 }
 .todo-item {
   justify-content: space-between;
@@ -63,13 +72,33 @@
   border-bottom: 1px solid #e6e6e6;
   margin: 5px 0px;
   background-color: #ffffff;
+  border-radius: 8px;
+  border: 0px solid #ffffff;
 }
 .todo-item:hover {
-  background-color: #e7e7e7;
+  background-color: #c1ecff;
+  border: 1px solid #e6e6e6;
+  /* go up effect */
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.332);
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+
 }
 .todo-item input {
   margin-right: 1em;
-  /* change input color and size */
-  width: 1.5em;
-  height: 1.5em;
+}
+
+.todo-check-true{
+  color: #e6e6e6;
+}
+.todo-item:hover .todo-check-true{
+  color: #000000;
+}
+
+.todo-check-false{
+}
+.todo-item:hover .todo-check-false{
+  cursor: pointer;
+  font-weight: bold;
 }

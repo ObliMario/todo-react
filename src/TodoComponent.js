@@ -9,7 +9,7 @@ import "./StyleTodo.css";
 const todos = [
   { text: "Learn React", isCompleted: false },
   { text: "Learn React2", isCompleted: false },
-  { text: "Learn React3", isCompleted: false },
+  { text: "Learn React3", isCompleted: true },
 ];
 
 function TodoComponet() {
