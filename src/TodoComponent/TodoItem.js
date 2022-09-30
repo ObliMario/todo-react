@@ -5,11 +5,17 @@ function TodoItem(props) {
     <div className="todo-item">
       <li className={`todo-check-${props.isCompleted}`}>
         <label>
-          <input type="checkbox" defaultChecked={props.isCompleted} />
+          <input
+            type="checkbox"
+            defaultChecked={props.isCompleted}
+            onClick={props.onComplete}
+          />
           {props.text}
+          <button onClick={props.onDelete}>X</button>
         </label>
       </li>
     </div>
+    
   );
 }
 

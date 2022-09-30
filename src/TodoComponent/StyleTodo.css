@@ -14,6 +14,7 @@
   background: rgba(149, 227, 255, 0.09);
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
+  min-width: 50%;
 }
 
 .todo-counter h1, h2{
@@ -101,4 +102,22 @@
 .todo-item:hover .todo-check-false{
   cursor: pointer;
   font-weight: bold;
+}
+
+.todo-item button {
+  border: none;
+  background-color: #dd2a2a;
+  color: #e6e6e6;
+  float: right;
+  border-radius: 3px;
+}
+
+.todo-item button:hover {
+  background-color: #ff0000;
+  /* go up effect */
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  /* jump effect */
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }

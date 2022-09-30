@@ -1,6 +1,6 @@
 .App{
   height: 100vh;
   display: flex;
-  background-image: url('./img/picture.jpg');
+  background-image: url('../img/picture.jpg');
   background-size: cover;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { TodoComponet } from "./TodoComponent";
+import { TodoComponet } from "../TodoComponent/TodoComponent";
 import "./App.css";
 function App() {
   return (
