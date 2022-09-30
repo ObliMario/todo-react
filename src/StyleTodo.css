@@ -1,0 +1,63 @@
+:root {
+  --main-check-color: #027d00;
+}
+
+.TodoComponent {
+  margin: auto;
+  padding: 2em;
+  max-width: 50%;
+  border-radius: 3px;
+  border: 1px solid #e6e6e6;
+  background-color: #f5f5f5;
+  box-shadow: 0 1px 0 #fff;
+}
+
+.TodoCounter {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.TodoList {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.TodoSearch {
+  text-align-last: center;
+  margin-bottom: 1em;
+}
+.TodoSearch input {
+  padding: 0.5em;
+  height: 2em;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  background-color: #f5f5f5;
+  box-shadow: 0 1px 0 #fff;
+}
+.TodoButtonCreate button {
+  width: 50px;
+  height: 50px;
+  float: right;
+  color: var(--main-check-color);
+  font-size: 2em;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid var(--main-check-color);
+  background-color: #ffffff;
+}
+.todo-item {
+  justify-content: space-between;
+  padding: 1em;
+  border-bottom: 1px solid #e6e6e6;
+  background-color: #ffffff;
+  margin: 5px 0px;
+}
+.todo-item input {
+  margin-right: 1em;
+  /* change input color and size */
+  width: 1.5em;
+  height: 1.5em;
+}
