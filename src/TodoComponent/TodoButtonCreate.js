@@ -1,9 +1,12 @@
 import React from "react";
+import { TodoContext } from "./TodoContext.js";
 
 function TodoButtonCreate() {
+    const { setOpenModal } = React.useContext(TodoContext);
   return(
       <div className="TodoButtonCreate">
-          <button>+</button>
+        {/* When clocked, open modal */}
+        <button onClick={() => setOpenModal(true)}>+</button>
       </div>
       );
 }

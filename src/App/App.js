@@ -1,10 +1,14 @@
 import React from "react";
 import { TodoComponet } from "../TodoComponent/TodoComponent";
 import "./App.css";
+import { TodoProvider } from "../TodoComponent/TodoContext";
+
 function App() {
   return (
     <div className="App">
-      <TodoComponet />
+      <TodoProvider>
+        <TodoComponet />
+      </TodoProvider>
     </div>
   );
 }
