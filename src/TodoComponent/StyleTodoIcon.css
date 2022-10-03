@@ -43,9 +43,19 @@
 .todo-check-true .Icon-svg--delete {
   fill: #e6e6e6;
 }
+.todo-check-true .Icon-svg--delete:hover {
+  fill: #ff0000;
+  /* infinite blink effect */
+  animation: blink 2s infinite;
 
+}
 .todo-check-false .Icon-svg--check {
   fill: #e6e6e6;
+}
+.todo-check-false .Icon-svg--check:hover {
+  fill: #76ca84;
+  /* fill effect */
+  animation: fill 1s;
 }
 
 .Icon-Container--add {
@@ -58,12 +68,12 @@
 
 .Icon-Container--add:hover {
   background-color: #76ca84;
+  border: 2px solid #76ca84;
   /* go up effect */
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   /* jump effect */
   transition: all 0.2s ease-in-out;
-  border: 2px solid #76ca84;
 }
 .Icon-Container--add:hover .Icon-svg--add {
   color: #ffffff !important;
@@ -72,4 +82,28 @@
 .Icon-svg--add {
   font-size: 1.5em;
   cursor: pointer;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fill {
+  0% {
+    fill: #76ca84;
+  }
+  50% {
+    fill: #4da35b;
+  }
+  100% {
+    fill: #76ca84;
+  }
 }
