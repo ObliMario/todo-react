@@ -1,0 +1,75 @@
+.Icon-Container {
+  cursor: pointer;
+}
+
+.Icon-Container--check {
+  float: left;
+  margin-right: 5px;
+}
+
+.Icon-Container--delete {
+  float: right;
+}
+
+.Icon-svg {
+  font-size: 24px;
+}
+
+.Icon-svg--delete {
+  fill: #c12222;
+}
+.Icon-svg--delete:hover {
+  fill: #ff0000;
+  /* blur brigth effect */
+  filter: blur(0.5px);
+  /* go up effect */
+  transform: translateY(-2px);
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+}
+.Icon-svg--check {
+  fill: #76ca84;
+}
+.Icon-svg--check:hover {
+  fill: #76ca84;
+  /* blur brigth effect */
+  filter: blur(0.5px);
+  /* go up effect */
+  transform: translateY(-2px);
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.todo-check-true .Icon-svg--delete {
+  fill: #e6e6e6;
+}
+
+.todo-check-false .Icon-svg--check {
+  fill: #e6e6e6;
+}
+
+.Icon-Container--add {
+  float: right;
+  border: 2px solid var(--main-check-color);
+  border-radius: 50%;
+  background-color: #ffffff;
+  padding: 8px;
+}
+
+.Icon-Container--add:hover {
+  background-color: #76ca84;
+  /* go up effect */
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  /* jump effect */
+  transition: all 0.2s ease-in-out;
+  border: 2px solid #76ca84;
+}
+.Icon-Container--add:hover .Icon-svg--add {
+  color: #ffffff !important;
+}
+
+.Icon-svg--add {
+  font-size: 1.5em;
+  cursor: pointer;
+}

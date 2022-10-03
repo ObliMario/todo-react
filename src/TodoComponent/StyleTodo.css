@@ -17,7 +17,8 @@
   min-width: 50%;
 }
 
-.todo-counter h1, h2{
+.todo-counter h1,
+h2 {
   text-align: center;
   font-weight: bold;
 }
@@ -45,28 +46,7 @@
   outline-offset: 0px;
   outline: 1px ridge #ffffff;
 }
-.TodoButtonCreate button {
-  width: 50px;
-  height: 50px;
-  float: right;
-  color: var(--main-check-color);
-  font-size: 2em;
-  cursor: pointer;
-  text-align: center;
-  border-radius: 50%;
-  border: 2px solid var(--main-check-color);
-  background-color: #ffffff;
-}
 
-.TodoButtonCreate button:hover {
-  background-color: #76ca84;
-  color: #ffffff;
-  /* go up effect */
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  /* jump effect */
-  transition: all 0.2s ease-in-out;
-}
 .todo-item {
   justify-content: space-between;
   padding: 1em;
@@ -83,46 +63,23 @@
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.332);
   transition: all 0.1s ease-in-out;
-  cursor: pointer;
-
 }
 .todo-item input {
   margin-right: 1em;
 }
 
-.todo-check-true{
+.todo-check-true {
   color: #e6e6e6;
 }
-.todo-item:hover .todo-check-true{
+.todo-item:hover .todo-check-true {
   color: #000000;
 }
 
-.todo-check-false{
-}
-.todo-item:hover .todo-check-false{
-  cursor: pointer;
+.todo-item:hover .todo-check-false {
   font-weight: bold;
 }
 
-.todo-item button {
-  border: none;
-  background-color: #dd2a2a;
-  color: #e6e6e6;
-  float: right;
-  border-radius: 3px;
-}
-
-.todo-item button:hover {
-  background-color: #ff0000;
-  /* go up effect */
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  /* jump effect */
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-}
-
-.todo-form{
+.todo-form {
   display: flex;
   padding: 2em;
   border-radius: 3px;
@@ -135,14 +92,14 @@
   height: fit-content;
 }
 
-.todo-form form{
+.todo-form form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.todo-form form textarea{
+.todo-form form textarea {
   width: 35vw;
   height: 20vh;
   border: 1px solid #e6e6e6;
@@ -152,12 +109,12 @@
   padding: 0.5em;
 }
 
-.todo-form form textarea:focus-visible{
+.todo-form form textarea:focus-visible {
   outline-offset: 0px;
   outline: 1px ridge #ffffff;
 }
 
-.todo-form form button{
+.todo-form form button {
   width: 100%;
   height: 50px;
   border: 1px solid #e6e6e6;
@@ -169,7 +126,7 @@
   cursor: pointer;
 }
 
-.todo-form form button:hover{
+.todo-form form button:hover {
   background-color: #76ca84;
   color: #ffffff;
   /* go up effect */
@@ -178,10 +135,12 @@
   /* jump effect */
   transition: all 0.2s ease-in-out;
   border: 1px solid #90df9d;
-  
 }
 
-.todo-form form > .cancel:hover{
+.todo-form form > .cancel:hover {
   background-color: #ca7676;
   border: 1px solid #e79090;
+}
+.icons-container {
+  float: right;
 }
