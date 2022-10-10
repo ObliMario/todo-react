@@ -3,7 +3,8 @@ import React from "react";
 function TodoEmpty() {
   return (
     <div className="TodoEmpty">
-      <span>Empty...</span>
+      {/* if SearchedText Exists then show span */}
+      <span>EMPTY</span>
     </div>
   );
 }

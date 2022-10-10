@@ -1,21 +1,21 @@
 import React from "react";
-import { TodoContext } from "./TodoContext.js";
-import { TodoLoading } from "./TodoLoading.js";
-import { TodoError } from "./TodoError.js";
-
 
 function TodoList(props) {
-  const { loading, error } = React.useContext(TodoContext);
+  const renderFunc = props.render || props.children;
   return (
     <ul className="TodoList">
-      {/* if loading show message */}
-      {loading && <TodoLoading />}
-      {loading && <TodoLoading />}
-      {loading && <TodoLoading />}
       {/* if error show message */}
-      {error && <TodoError />}
+      {props.error && props.onError()}
+      {/* if loading show message */}
+      {props.loading && props.onLoading()}
+      {/* if empty */}
+      {!props.loading && !props.totalTodos && props.onEmpty()}
+      {/* if empty and searched */}
+      {(!!props.totalTodos &&
+        !props.searchedTodos.length) &&
+        props.onEmptySearched(props.searchedText)}
       {/* if no error and no loading show children */}
-      {!error && !loading && props.children}
+      { !props.loading && props.searchedTodos.map(renderFunc)}
     </ul>
   );
 }
